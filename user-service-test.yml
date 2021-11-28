@@ -4,8 +4,8 @@ spring:
   datasource:
     driver: com.mysql.jdbc.Driver
     url: http://db.com
-    username: test23
-    password: test2
+    username: yanagi10
+    password: zzzz
 
 default:
   message: test profiles 에서 사용할 설정 정보들
