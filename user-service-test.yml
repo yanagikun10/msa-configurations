@@ -2,10 +2,15 @@
 
 spring:
   datasource:
-    driver: com.h2.Driver
-    url: http://new-db-url.com
-    username: admin
-    password: admin
+    url: jdbc:h2:mem:userdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2-console
 
 default:
   message: test profiles 에서 사용할 설정 정보들
