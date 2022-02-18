@@ -4,7 +4,7 @@
 spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://172.16.152.96:1433;databasename=auth_service
+    url: jdbc:sqlserver://127.0.0.1:1433;databasename=auth_service
     username : authserver
     password: 1234
   jpa:
@@ -18,7 +18,7 @@ spring:
         format_sql: true
 # redis 설정
   redis:
-    host: 172.16.152.96
+    host: 127.0.0.1
     port: 6379
     #sentinel:
     #  master: redis
