@@ -1,10 +1,9 @@
-# auth-service-dev.yml
-
+#auth-service-real.yml
 # JPA 설정
 spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://127.0.0.1:1433;databasename=auth_service
+    url: jdbc:sqlserver://172.16.152.96:1433;databasename=auth_service
     username : authserver
     password: 1234
   jpa:
@@ -18,9 +17,9 @@ spring:
         format_sql: true
 # redis 설정
   redis:
-    host: 127.0.0.1
+    host: 172.16.152.96
     port: 6379
     #sentinel:
     #  master: redis
-    #  nodes: 172.16.152.96:6379,172.16.152.96:6479,172.16.152.96:6579 
+    #  nodes: 172.16.152.96:6379,172.16.152.96:6479,172.16.152.96:6579
     

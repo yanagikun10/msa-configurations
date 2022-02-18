@@ -1,29 +1,5 @@
-# user-service-test.yml
+# auth-service.yml
 
-# JPA 설정
-spring:
-  datasource:
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://172.16.152.96:1433;databasename=auth_service
-    username : authserver
-    password: 1234
-  jpa:
-    open-in-view: false
-    database-platform: org.hibernate.dialect.SQLServer2012Dialect
-    generate-ddl: true
-    show_sql: true
-    properties:
-      hibernate:
-        ddl-auto: update # 스키마가 변경된 경우에만 실행
-        format_sql: true
-# redis 설정
-  redis:
-    host: 172.16.152.96
-    port: 6379
-    #sentinel:
-    #  master: redis
-    #  nodes: 172.16.152.96:6379,172.16.152.96:6479,172.16.152.96:6579
- 
 # jwt 설정    
 jwt:
   secret: 12345678901234567890123456789000
@@ -34,5 +10,4 @@ jwt:
   splitTokenSeperator: \.
   bearer: "Bearer " 
   accessToken: accessToken
-  refreshToken: refresh_token    
-    
+  refreshToken: refresh_token
