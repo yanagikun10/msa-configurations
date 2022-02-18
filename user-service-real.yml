@@ -1,0 +1,16 @@
+# user-service-test.yml
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:userdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2-console
+
+default:
+  message: test profiles 에서 사용할 설정 정보들
