@@ -1,4 +1,4 @@
-# user-service-test.yml
+# user-service-real.yml
 
 spring:
   datasource:

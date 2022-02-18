@@ -1,0 +1,14 @@
+# board-service-dev.yml
+spring:
+  datasource:
+    url: jdbc:h2:mem:boarddb;DB_CLOSE_DELAY=-1;MODE=MYSQL;
+    username: sa
+    password:
+    schema:
+    - classpath:script/create_tb.sql
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2-console 
